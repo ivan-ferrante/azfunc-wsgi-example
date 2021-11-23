@@ -8,7 +8,7 @@ api = Api(application, doc='/doc/')
 @api.route("/hello")
 class Hello(Resource):
     @api.doc(
-        params={'user' : 'an user identigier'},
+        params={'user' : 'an user identifier'},
         responses={
             200: 'Success',
             400: 'Validation Error'
